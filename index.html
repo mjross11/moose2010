@@ -1,127 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moose Lodge 2010</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - December 2025</title>
   <style>
     body {
-      background-color: #f7f7f7;
       font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      background: #f7f7f7;
+      text-align: center;
     }
     header {
-      background-color: #6b3e26;
-      color: white;
-      padding: 30px 10px;
-      font-size: 48px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      font-size: 24px;
     }
-    main {
-      flex: 1;
-      padding: 30px 15px;
+    .container {
+      margin: 20px auto;
+      max-width: 900px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     img {
-      max-width: 95%;
+      max-width: 100%;
       height: auto;
-      border: 4px solid #6b3e26;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-    .button {
-      background-color: #6b3e26;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      margin-top: 30px;
-      transition: 0.3s;
-    }
-    .button:hover {
-      background-color: #8c5436;
-    }
-
-    /* New section styling */
-    .calendar-box {
-      margin-top: 50px;
-      padding: 30px;
-      background-color: #fffaf5;
-      border: 3px solid #6b3e26;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .calendar-box .button {
-      margin-top: 10px;
-    }
-
-    /* New section styling */
-    .section {
-      margin-top: 40px;
-    }
-
-    footer {
-      background-color: #6b3e26;
-      color: white;
-      padding: 20px;
-      font-size: 16px;
-    }
-    footer a {
-      color: #ffd480;
+    .like-button {
+      margin-top: 20px;
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 18px;
     }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header {
-        font-size: 32px;
-      }
-      .button {
-        font-size: 16px;
-        padding: 12px 20px;
-      }
-      footer {
-        font-size: 14px;
-      }
+    .like-button:hover {
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
-  <header>Moose Lodge 2010</header>
-
-  <main>
-    <img src="Thxgpool.jpg" alt="Moose Lodge 2010 Thanksgiving Pool">
-    
-
-    <!-- New Winners Section -->
-    <div class="section">
-      <h2>2025 Winners</h2>
-      <img src="winners.jpg" alt="2025 Winners">
+  <header style="display:flex; justify-content:space-between; align-items:center;">
+    <div>Palm Beach Gardens Moose 2010</div>
+    <div>
+      <a href="login.html" style="color:#fff; text-decoration:none; font-size:16px; background:#007bff; padding:8px 14px; border-radius:6px;">Login</a>
     </div>
-    <div class="calendar-box">
-      <h3>Check Out Our Upcoming Events</h3>
-      <button class="button" onclick="location.href='Calendar.html'">View Calendar</button>
-    </div>
-  </main>
-
-  <footer>
-    <p>Moose Lodge 2010 • Thanksgiving Day Trifecta Pool 2025</p>
-    <p>Visit us on Facebook: <a href="#">https://www.facebook.com/PBGMooseLodge</a></p>
-    <p>Contact: <a href="mailto:pbg@moose2010.com">pbg@moose2010.com</a></p>
-  </footer>
+    <nav style="background:#444; padding:10px; text-align:center;">
+    <a href="index.html" style="color:#fff; margin:0 15px; text-decoration:none; font-size:18px;">Home</a>
+    <a href="events.html" style="color:#fff; margin:0 15px; text-decoration:none; font-size:18px;">Events</a>
+    <a href="about.html" style="color:#fff; margin:0 15px; text-decoration:none; font-size:18px;">About</a>
+    <a href="contact.html" style="color:#fff; margin:0 15px; text-decoration:none; font-size:18px;">Contact</a>
+  </nav>
+</header>
+  <div class="container">
+    <img src="dec2025.jpg" alt="December 2025" />
+    <a class="like-button" href="events.html">👍 Like & View Events</a>
+  </div>
 </body>
 </html>
