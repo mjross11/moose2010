@@ -4,92 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moose Lodge 2010</title>
-  <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background-color: #6b3e26;
-      color: white;
-      padding: 30px 10px;
-      font-size: 48px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-    main {
-      flex: 1;
-      padding: 30px 15px;
-    }
-    img {
-      max-width: 95%;
-      height: auto;
-      border: 4px solid #6b3e26;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .button {
-      background-color: #6b3e26;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      margin-top: 30px;
-      transition: 0.3s;
-    }
-    .button:hover {
-      background-color: #8c5436;
-    }
-    footer {
-      background-color: #6b3e26;
-      color: white;
-      padding: 20px;
-      font-size: 16px;
-    }
-    footer a {
-      color: #ffd480;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header {
-        font-size: 32px;
-      }
-      .button {
-        font-size: 16px;
-        padding: 12px 20px;
-      }
-      footer {
-        font-size: 14px;
-      }
-    }
-  </style>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>Moose Lodge 2010</header>
-  <main>
-    <img src="sbpool1.jpg" alt="Super Bowl Pool 1">
-    <br>
-    <button class="button" onclick="location.href='Calendar.html'">View Calendar</button>
-    <button class="button" onclick="location.href='pool2.html'">Pool 2</button>
-    <button class="button" onclick="location.href='nascar.html'">NASCAR</button>
-  </main>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Moose Lodge 2010</h1>
+  </header>
+
+  <!-- TOP NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Calendar.html">Calendar</a>
+    <a href="pools.html">Pools</a>
+    <a href="Us.html">About</a>
+  </nav>
+
+  <!-- PAGE LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+<aside>
+  <h3>Member Links</h3>
+
+  <a href="https://www.mooseintl.org/" target="_blank">  Moose International
+  <a href="https://secure.mooseintl.org/QuickPay/Login.aspx?ReturnUrl=%2fQuickPay%2f" target="_blank">
+    💳 Renew Dues
+    <a href="Calendar.html">📅 Lodge Calendar</a>
+  <a href="pools.html">🎟 Lodge Pools</a>
+  <a href="Us.html">🏠 About the Lodge</a>
+
+  <!-- NEW ITEM -->
+  
+  </a>
+
+</aside> 
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+      <h2>Welcome to Moose Lodge 2010</h2>
+
+
+      <!-- BUTTONS -->
+      <div>
+        <button class="button" onclick="location.href='Calendar.html'">
+          Calendar
+        </button>
+
+        <button class="button" onclick="location.href='nascar.html'">
+          NASCAR
+        </button>
+     
+
+	 </div>
+
+    
+	<!-- EVENTS -->
+     
+
+	 <h2>Upcoming Events</h2>
+
+      <div class="events">
+
+        <div class="event-card">
+          <h4>Home Cookin' & Music</h4>
+          <p><strong>Date:</strong> Wednesdays</p>
+          <p><strong>Time:</strong> 6:00 PM</p>
+        </div>
+
+        <div class="event-card">
+          <h4>Bingo - Public Welcome</h4>
+          <p><strong>Date:</strong> Every Thursday</p>
+          <p><strong>Time:</strong> Starts @ Noon</p>
+        </div>
+
+        <div class="event-card">
+          <h4>Moose Social Hour</h4>
+          <p><strong>Date:</strong> Monday-Friday</p>
+          <p><strong>Time:</strong> 3 - 6 PM</p>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Moose Lodge 2010 • Super Bowl Pool 1</p>
-    <p>Visit us on Facebook: <a href="#">https://www.facebook.com/PBGMooseLodge</a></p>
-    <p>Contact: <a href="mailto:pbg@moose2010.com">pbg@moose2010.com</a></p>
+    <p>3600 RCA Blvd, Palm Beach Gardens, FL 33410 </p>
+
+    <p>
+      Facebook:
+      <a href="https://www.facebook.com/PBGMooseLodge" target="_blank">
+        PBG Moose Lodge
+      </a>
+    </p>
+
+    <p>
+      Contact:
+      <a href="mailto:pbg@moose2010.com">
+        pbg@moose2010.com
+      </a>
+    </p>
   </footer>
+
 </body>
 </html>
