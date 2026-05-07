@@ -267,3 +267,46 @@ main h3 {
   margin-top: 25px;
   color: var(--moose-brown);
 }
+.pools-table td:nth-child(2) {
+  font-weight: bold;
+  color: #0b5e7a;
+}
+/* LOGIN PAGE */
+
+.login-box {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.login-box input {
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: var(--header-blue);
+}
+
+.member-features {
+  text-align: left;
+  max-width: 300px;
+  margin: auto;
+}
+
+.member-features li {
+  margin-bottom: 10px;
+}
