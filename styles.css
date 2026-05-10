@@ -310,3 +310,12 @@ main h3 {
 .member-features li {
   margin-bottom: 10px;
 }
+.poker-highlight {
+  background-color: #ffffff;
+  border-left: 6px solid #0b5e7a;
+  padding: 18px;
+  margin: 25px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
