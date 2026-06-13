@@ -21,18 +21,16 @@
     </nav>
 
 <div class="layout">
+<div class="sports-links">
 
-  <aside>
-    <h3>Member Links</h3>
-
-    <a href="Calendar.html">📅 Lodge Calendar</a>
-    <a href="sports-calendar.html">🏆 Sports Calendar</a>
-    <a href="nascar.html">🏁 NASCAR</a>
-    <a href="Us.html">🏠 About the Lodge</a>
+    <a id="mlbButton" href="#" target="_blank">
+        <img src="images/mlb.svg"
+             alt="MLB Scores"
+             class="sports-logo">
     </a>
 
-    <a href="index.html">🏠 Home</a>
-  </aside>
+</div>
+ 
 
   <main>
 
@@ -74,6 +72,17 @@
     </a>
   </p>
 </footer>
+<script>
 
+const today = new Date();
+
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2,'0');
+const day = String(today.getDate()).padStart(2,'0');
+
+document.getElementById('mlbButton').href =
+  `https://www.mlb.com/scores/${year}-${month}-${day}`;
+
+</script>
 </body>
 </html>
