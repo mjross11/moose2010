@@ -1,128 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moose Lodge 2010</title>
-
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a4c">
+<title>Moose Lodge 2010 | Home</title>
+<style>
+:root{--navy:#102a4c;--navy2:#07182c;--gold:#f2c66d;--cream:#fff9eb;--white:#fff;--muted:#cbd5e1}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#07182c,#16385b 60%,#0c2037);color:var(--white);font-family:Arial,Helvetica,sans-serif;min-height:100vh}
+header{text-align:center;padding:38px 18px 24px;border-bottom:3px solid var(--gold)}header .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.23em;font-weight:700;font-size:.85rem}h1{font-size:clamp(2.1rem,5vw,4rem);margin:10px 0 6px}header p{color:#e3eaf2;margin:0;font-size:1.1rem}
+main{max-width:1220px;margin:0 auto;padding:38px 22px 50px}.intro{text-align:center;margin-bottom:28px}.intro h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:0 0 8px}.intro p{color:var(--muted);margin:0}
+.switchboard{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.tile{min-height:175px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;text-decoration:none;color:white;text-align:center;background:linear-gradient(155deg,#254d77,#102a4c);border:2px solid #d8ab54;border-radius:17px;padding:22px 12px;box-shadow:0 8px 24px #0005;transition:transform .15s,background .15s,box-shadow .15s}.tile:hover,.tile:focus-visible{transform:translateY(-4px);background:linear-gradient(155deg,#35658f,#173b62);box-shadow:0 12px 28px #0008;outline:3px solid var(--gold);outline-offset:3px}.tile .symbol{font-size:2.8rem;line-height:1}.tile strong{font-size:clamp(1.1rem,2vw,1.5rem)}.tile small{color:#dce5ef;font-size:.9rem}
+.quicklinks{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:36px 0 12px}.quicklinks a{border:1px solid #8aa2bd;color:var(--cream);text-decoration:none;border-radius:999px;padding:11px 18px;font-weight:bold}.quicklinks a:hover,.quicklinks a:focus-visible{background:#24476d}
+footer{text-align:center;padding:26px 16px 36px;border-top:1px solid #45607b;color:#d5dfeb;font-size:.95rem}footer p{margin:8px 0}footer a{color:var(--gold)}
+@media(max-width:850px){.switchboard{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.switchboard{grid-template-columns:1fr}.tile{min-height:125px;flex-direction:row;justify-content:flex-start;text-align:left;padding:18px 24px}.tile .symbol{font-size:2.3rem}.tile .copy{display:flex;flex-direction:column;gap:4px}}
+</style>
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <h1>Moose Lodge 2010</h1>
-  </header>
-
-  <!-- TOP NAVIGATION -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="Calendar.html">Calendar</a>
-    <a href="us.html">About</a>
-	<!--<a href="hallrental.html">🎉 Hall Rental</a>--!> 
-	<a href="login.html">Members Login</a>
-	  
-  </nav>
-
-  <!-- PAGE LAYOUT -->
-  <div class="layout">
-
-    <!-- SIDEBAR -->
-<aside>
-  <h3>Member Links</h3>
-
-  <!--<a href="https://www.mooseintl.org/" target="_blank">  Moose International --!>
-  <a href="https://secure.mooseintl.org/QuickPay/Login.aspx?ReturnUrl=%2fQuickPay%2f" target="_blank">
-    💳 Renew Dues
-    <a href="calendar.html">📅 Lodge Calendar</a>
-    <a href="us.html">🏠 About the Lodge</a>
-	<!--- <a href="hallrental.html">🎉 Hall Rental</a> ---!>
-	<a href="sports-calendar.html">🏆 Sports Calendar</a>
-  
-
-  <!-- NEW ITEM -->
-  
-  </a>
-
-</aside> 
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-      <h2>Welcome to Moose Lodge 2010</h2>
-
-
-      <!-- BUTTONS -->
-      <div>
-        <button class="button" onclick="location.href='Calendar.html'">
-          Calendar
-        </button>
-
-        <button class="button" onclick="location.href='nascar.html'">
-          NASCAR
-        </button>
-		<button class="button" onclick="location.href='sports-calendar.html'">
-		  Sports Calendar
-		</button>
-		<!--<button class="button" onclick="location.href='members.html'">
-          Enter Members Area
-		</button>--!>
-     
-
-	 </div>
-
-    
-	<!-- EVENTS -->
-     
-
-	 <h2>Upcoming Events</h2>
-
-      <div class="events">
-
-        <div class="event-card">
-          <h4>Variety Food Menu & Music</h4>
-          <p><strong>Date:</strong> Wednesdays</p>
-          <p><strong>Time:</strong> 6:00 PM</p>
-        </div>
-
-        <div class="event-card">
-          <h4>Bingo - Public Welcome</h4>
-          <p><strong>Date:</strong> Every Thursday</p>
-          <p><strong>Time:</strong> Starts @ Noon</p>
-        </div>
-
-        <div class="event-card">
-          <h4>Moose Social Hour</h4>
-          <p><strong>Date:</strong> Monday-Friday</p>
-          <p><strong>Time:</strong> 3 - 6 PM</p>
-        </div>
-
-      </div>
-
-    </main>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>3600 RCA Blvd, Palm Beach Gardens, FL 33410 </p>
-
-    <p>
-      Facebook:
-      <a href="https://www.facebook.com/PBGMooseLodge" target="_blank">
-        PBG Moose Lodge
-      </a>
-    </p>
-
-    <p>
-      Contact:
-      <a href="mailto:pbgardens@moose2010.com">
-        pbgardens@moose2010.com
-      </a>
-    </p>
-  </footer>
-
-</body>
-</html>
+<header><div class="eyebrow">Palm Beach Gardens, Florida</div><h1>Moose Lodge 2010</h1><p>Social Quarters • Events • Sports • Community</p></header>
+<main>
+<section class="intro"><h2>Welcome to the Lodge</h2><p>Choose a button to view schedules, activities, and lodge information.</p></section>
+<nav class="switchboard" aria-label="Main switchboard">
+<a class="tile" href="calendar.html"><span class="symbol" aria-hidden="true">📅</span><span class="copy"><strong>Social Calendar</strong><small>Lodge activities and events</small></span></a>
+<a class="tile" href="sports-calendar.html"><span class="symbol" aria-hidden="true">🏆</span><span class="copy"><strong>Sports Calendar</strong><small>Major games and events</small></span></a>
+<a class="tile" href="nfl.html"><span class="symbol" aria-hidden="true">🏈</span><span class="copy"><strong>NFL Schedule</strong><small>Football games and times</small></span></a>
+<a class="tile" href="nascar.html"><span class="symbol" aria-hidden="true">🏁</span><span class="copy"><strong>NASCAR</strong><small>Races and schedules</small></span></a>
+<a class="tile" href="bingo.html"><span class="symbol" aria-hidden="true">🎱</span><span class="copy"><strong>Bingo</strong><small>Thursday bingo and information</small></span></a>
+<a class="tile" href="hallrental.html"><span class="symbol" aria-hidden="true">🎉</span><span class="copy"><strong>Rental Hall</strong><small>Host your next event</small></span></a>
+<a class="tile" href="us.html"><span class="symbol" aria-hidden="true">ℹ️</span><span class="copy"><strong>About</strong><small>Learn about Moose Lodge 2010</small></span></a>
+</nav>
+<nav class="quicklinks" aria-label="Additional lodge links"><a href="login.html">Members Login</a><a href="https://secure.mooseintl.org/QuickPay/Login.aspx?ReturnUrl=%2fQuickPay%2f" target="_blank" rel="noopener noreferrer">Renew Dues ↗</a></nav>
+</main>
+<footer><p>3600 RCA Blvd, Palm Beach Gardens, FL 33410 • (561) 626-4170</p><p><a href="https://www.facebook.com/PBGMooseLodge" target="_blank" rel="noopener noreferrer">Facebook: PBG Moose Lodge</a> &nbsp; | &nbsp; <a href="mailto:pbgardens@moose2010.com">pbgardens@moose2010.com</a></p></footer>
+</body></html>
