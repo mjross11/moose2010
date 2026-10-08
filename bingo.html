@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moose Lodge 2010 Bingo every Thursday at noon. Open to the public in Palm Beach Gardens, Florida.">
+  <title>Thursday Bingo | Moose Lodge 2010</title>
+  <style>
+    :root { color-scheme: dark; --navy:#0b2344; --gold:#edc56d; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color:white; background:linear-gradient(160deg,#07162d,#143d69); text-align:center; }
+    header { padding:25px 16px 12px; }
+    h1 { color:var(--gold); margin:0 0 8px; font-size:clamp(1.8rem,4vw,3rem); }
+    .subtitle { margin:0; font-size:1.1rem; }
+    nav { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; padding:14px; }
+    nav a { color:#0b2344; background:var(--gold); border-radius:10px; padding:12px 20px; text-decoration:none; font-weight:bold; }
+    nav a:hover, nav a:focus-visible { background:#fff0bd; }
+    main { width:min(100% - 28px,1000px); margin:14px auto 35px; }
+    .poster { width:100%; height:auto; display:block; border:4px solid var(--gold); border-radius:12px; background:white; box-shadow:0 12px 35px #0008; }
+    .details { line-height:1.7; margin:22px auto; }
+    footer { border-top:1px solid #ffffff40; padding:18px; color:#e4e8f0; }
+    footer a { color:var(--gold); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Moose Lodge 2010 • Bingo</h1>
+    <p class="subtitle">Every Thursday at 12:00 PM • Open to the Public</p>
+  </header>
+  <nav aria-label="Page navigation">
+    <a href="index.html">← Home</a>
+    <a href="calendar.html">Social Calendar</a>
+  </nav>
+  <main>
+    <!-- Upload bingo.png alongside bingo.html. Replace this file weekly only if needed. -->
+    <img class="poster" src="bingo/bingo.png" alt="Moose Lodge 2010 Bingo poster: Every Thursday at noon, 12 games, plenty of seating, food and coffee available, open to the public at 3600 RCA Blvd, Palm Beach Gardens, FL 33410." onerror="this.style.display='none'; document.getElementById('missing').hidden=false;">
+    <p id="missing" hidden>Poster not found. Upload <strong>bingo.png</strong> into the same folder as <strong>bingo.html</strong>.</p>
+    <p class="details"><strong>12 Games • Plenty of Seating • Food &amp; Coffee Available</strong><br>3600 RCA Blvd, Palm Beach Gardens, FL 33410<br>(561) 626-4170</p>
+  </main>
+  <footer>Moose Lodge 2010 · <a href="https://www.facebook.com/PBGMooseLodge" target="_blank" rel="noopener noreferrer">Facebook</a></footer>
+</body>
+</html>

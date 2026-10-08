@@ -325,4 +325,19 @@ main h3 {
     border: 4px solid #0b5e7a;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}.sports-links {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.sports-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform .3s;
+}
+
+.sports-logo:hover {
+    transform: scale(1.1);
 }
