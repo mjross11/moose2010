@@ -2,87 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sports Calendar - Moose Lodge 2010</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moose Lodge 2010 sports calendar and major sporting events in Palm Beach Gardens, Florida.">
+  <title>Sports Calendar | Moose Lodge 2010</title>
+  <style>
+    :root { color-scheme: dark; --navy:#0b1b31; --panel:#142b48; --gold:#e7b954; --text:#f5f7fc; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:linear-gradient(150deg,#071426,var(--navy) 60%,#142a42); color:var(--text); min-height:100vh; }
+    header { text-align:center; padding:35px 18px 25px; border-bottom:3px solid var(--gold); }
+    .eyebrow { color:var(--gold); text-transform:uppercase; font-weight:bold; letter-spacing:.16em; font-size:.8rem; }
+    h1 { margin:10px 0 6px; font-size:clamp(2rem,5vw,3.3rem); }
+    h1 span { color:var(--gold); }
+    header p { margin:0; color:#cbd7e8; }
+    main { width:min(1200px,96%); margin:30px auto 50px; text-align:center; }
+    h2 { color:var(--gold); font-size:clamp(1.5rem,3.5vw,2.2rem); margin:0 0 10px; }
+    .intro { color:#d7e0ed; margin:0 0 22px; }
+    .calendar-frame { background:#fff; padding:clamp(8px,2vw,18px); border:3px solid var(--gold); border-radius:15px; box-shadow:0 14px 35px #0006; }
+    .calendar-frame img { display:block; width:100%; height:auto; object-fit:contain; }
+    .actions { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin:28px 0; }
+    .actions a { display:inline-block; padding:14px 24px; border-radius:10px; background:var(--gold); color:#101b2c; font-weight:bold; text-decoration:none; }
+    .actions a.secondary { background:var(--panel); border:1px solid var(--gold); color:#fff; }
+    .actions a:hover,.actions a:focus-visible { filter:brightness(1.12); outline-offset:3px; }
+    footer { text-align:center; padding:22px 12px; border-top:1px solid #38506b; color:#b9c8db; font-size:.9rem; }
+  </style>
 </head>
-
 <body>
-
-<header>
-  <h1>Moose Lodge 2010</h1>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="Calendar.html">Calendar</a>
-  <a href="nascar.html">NFL</a>
-  <a href="Us.html">About</a>
-    </nav>
-
-<div class="layout">
-<div class="sports-links">
-
-    <a id="mlbButton" href="#" target="_blank">
-        <img src="images/mlb.svg"
-             alt="MLB Scores"
-             class="sports-logo">
-    </a>
-
-</div>
- 
-
+  <header>
+    <div class="eyebrow">Palm Beach Gardens, Florida</div>
+    <h1>Moose Lodge <span>2010</span></h1>
+    <p>Social Quarters &bull; Sports &bull; Community</p>
+  </header>
   <main>
-
-    <h2>October 2026 Feature TV Events</h2>
-
-    <p>
-      Watch sporting events in the Social Quarters and Game Room.
-      
-    </p>
-
-<img src="sports/sports.png"
-     alt="October Sports Calendar"
-     class="sports-image">
-
-    <br><br>
-
-    <button class="button" onclick="location.href='index.html'">
-      Return Home
-    </button>
-
-  </main>W
-
-</div>
-
-<footer>
-  <p>Moose Lodge 2010 • Palm Beach Gardens, FL</p>
-
-  <p>
-    Facebook:
-    <a href="https://www.facebook.com/PBGMooseLodge" target="_blank">
-      PBG Moose Lodge
-    </a>
-  </p>
-
-  <p>
-    Contact:
-    <a href="mailto:pbg@moose2010.com">
-      pbg@moose2010.com
-    </a>
-  </p>
-</footer>
-<script>
-
-const today = new Date();
-
-const year = today.getFullYear();
-const month = String(today.getMonth() + 1).padStart(2,'0');
-const day = String(today.getDate()).padStart(2,'0');
-
-document.getElementById('mlbButton').href =
-  `https://www.mlb.com/scores/${year}-${month}-${day}`;
-
-</script>
+    <h2>🏆 Sports Calendar</h2>
+    <p class="intro">Catch the major sporting events at the Lodge!</p>
+    <div class="calendar-frame">
+      <img src="sports/sports.png" alt="Moose Lodge sports calendar" onerror="this.style.display='none'; document.getElementById('image-error').hidden=false;">
+      <p id="image-error" hidden style="color:#142b48; padding:25px;">Sports calendar image not found. Please upload <strong>sports/sports.png</strong> to the website.</p>
+    </div>
+    <nav class="actions" aria-label="Page navigation">
+      <a href="index.html">⌂ Home</a>
+      <a class="secondary" href="calendar.html">📅 Social Calendar</a>
+      <a class="secondary" href="nfl.html">🏈 NFL Schedule</a>
+      <a class="secondary" href="nascar.html">🏁 NASCAR</a>
+    </nav>
+  </main>
+  <footer>3600 RCA Blvd, Palm Beach Gardens, FL 33410 &bull; Moose Lodge 2010</footer>
 </body>
 </html>
